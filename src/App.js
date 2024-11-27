@@ -163,16 +163,16 @@ const LandingPage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-12">
-        <div className="container mx-auto px-4 text-center">
-          <p className="mb-6 text-white/80">© 2024 MindfulWatch. All rights reserved.</p>
-          <div className="space-x-8">
-            <a href="#" className="text-white/80 hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="text-white/80 hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="text-white/80 hover:text-white transition-colors">Contact</a>
+        <footer className="bg-white/80 backdrop-blur-sm py-6">
+          <div className="container mx-auto text-center text-gray-600">
+            <p>&copy; {new Date().getFullYear()} MindfulWatch. All rights reserved.</p>
+            <div className="space-x-8">
+              <a href="javascript:void(0)" className="text-white/80 hover:text-white transition-colors">Privacy Policy</a>
+              <a href="javascript:void(0)" className="text-white/80 hover:text-white transition-colors">Terms of Service</a>
+              <a href="javascript:void(0)" className="text-white/80 hover:text-white transition-colors">Contact</a>
+            </div>
           </div>
-        </div>
-      </footer>
+        </footer>
     </div>
   );
 };
