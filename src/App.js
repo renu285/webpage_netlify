@@ -163,16 +163,31 @@ const LandingPage = () => {
       </section>
 
       {/* Footer */}
-        <footer className="bg-white/80 backdrop-blur-sm py-6">
-          <div className="container mx-auto text-center text-gray-600">
-            <p>&copy; {new Date().getFullYear()} MindfulWatch. All rights reserved.</p>
-            <div className="space-x-8">
-              <a href="javascript:void(0)" className="text-white/80 hover:text-white transition-colors">Privacy Policy</a>
-              <a href="javascript:void(0)" className="text-white/80 hover:text-white transition-colors">Terms of Service</a>
-              <a href="javascript:void(0)" className="text-white/80 hover:text-white transition-colors">Contact</a>
-            </div>
-          </div>
-        </footer>
+    <footer className="bg-white/80 backdrop-blur-sm py-6">
+      <div className="container mx-auto text-center text-gray-600">
+        <p>&copy; {new Date().getFullYear()} MindfulWatch. All rights reserved.</p>
+        <div className="space-x-8">
+          <button 
+            className="text-gray-600 hover:text-gray-800 transition-colors"
+            onClick={() => console.log('Privacy Policy clicked')}
+          >
+            Privacy Policy
+          </button>
+          <button 
+            className="text-gray-600 hover:text-gray-800 transition-colors"
+            onClick={() => console.log('Terms clicked')}
+          >
+            Terms of Service
+          </button>
+          <button 
+            className="text-gray-600 hover:text-gray-800 transition-colors"
+            onClick={() => console.log('Contact clicked')}
+          >
+            Contact
+          </button>
+        </div>
+      </div>
+    </footer>
     </div>
   );
 };
